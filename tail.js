@@ -5,14 +5,12 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
 
 const tail = function(arg1) {
   if (arg1.length === 0) {
     return "undefined";
   }
-  return tail(arg1);
+  return arg1.slice(1);
 };
 
 assertEqual(tail([5,6,7]), 5);
