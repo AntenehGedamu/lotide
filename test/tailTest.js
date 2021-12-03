@@ -1,4 +1,9 @@
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-tail([5,6,7], 5);
-tail(["Hello", "Lighthouse", "Labs"], "Hello");
+
+describe("#tail", () => {
+  it("returns ['Lighthouse', 'Labs'] from ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  });
+});
