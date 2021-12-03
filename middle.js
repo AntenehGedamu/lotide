@@ -39,4 +39,4 @@ const middle = function(arr) {
 // console.log(middle([1, 2, 3, 4]));
 // console.log(middle([1, 2, 3, 4, 5, 6]));
 
-module.export = middle;
+module.exports = middle;
